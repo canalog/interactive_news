@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+
+body,
+html {
+  color: black;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border-collapse: collapse;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.bg_img {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  font-size: 40px;
+  text-align: center;
+  /* 화면 작아지면 글씨도 작아지도록 처리해야함 */
+}
+
+.map_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.visible {
+  animation: fade-in 0.2s linear;
+  opacity: 1;
+}
+
+.hidden {
+  
+}
+
+.textbox {
+  background-color: rgb(206, 206, 206);
+  /* background-color: rgba(256, 256, 256, 0.8); */
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+  width: 50%;
+}
+
+.textbox p {
+  margin: 0;
+}
